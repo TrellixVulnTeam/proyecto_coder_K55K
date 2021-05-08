@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
+body {
+  background-color: #fff9e4;
+}
+
+body header .nav-item {
+  font-family: "Cinzel", serif;
+}
+
+body header .navbar-brand {
+  color: #002064;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+
+body header .navbar-brand:hover {
+  text-decoration: none;
+}
+
+body header .navbar-toggler-icon {
+  color: #002064;
+  background-color: #002064;
+}
+
+body header a {
+  text-decoration: none;
+  color: #002064;
+  font-size: 1.8rem;
+}
+
+body header a:hover {
+  text-decoration: underline;
+  color: #002064;
+}
+
+body header .contact {
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+}
+
+body .hero {
+  background: url(../img/hero/HeroImage.jpg) no-repeat center/cover;
+  background-attachment: fixed;
+  height: 110vh;
+  /*search*/
+}
+
+body .hero .containerbusqueda {
+  padding-top: 35vh;
+}
+
+body .hero .search {
+  position: relative;
+  -webkit-box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+          box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+}
+
+body .hero .search input {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+body .hero .search input {
+  height: 60px;
+  text-indent: 25px;
+}
+
+body .hero .search input:focus {
+  border: 0;
+}
+
+body .hero .search button {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 52px;
+  width: 130px;
+  background: #304b86;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+body .hero .btn {
+  font-family: "Cinzel", serif;
+  color: rgba(255, 255, 255, 0.904);
+  background-color: #304b86;
+  font-size: 1.2rem;
+  border: 0;
+}
+
+body .hero .btn:hover {
+  text-decoration: underline;
+  color: #fff9e4;
+}
+
+body .cards {
+  background-color: #fff9e4;
+  height: auto;
+}
+
+body .cards h2 {
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  color: #002064;
+  font-weight: bold;
+  margin: 40px 0;
+  width: auto;
+}
+
+body .cards .card {
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin: 50px;
+  padding: 0;
+}
+
+body .cards .card img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 15em;
+  width: 100%;
+}
+
+body .cards .card .card-title {
+  font-family: "Cinzel", serif;
+  font-size: 1.4rem;
+}
+
+body .cards .card li {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+
+body .cards .card .btn {
+  background-color: #304b86;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  border: 0;
+  padding: 0.7em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+}
+
+body .contactindex {
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(6%, #020024), color-stop(45%, #002064));
+  background: linear-gradient(0deg, #020024 6%, #002064 45%);
+  height: 100%;
+}
+
+body .contactindex h2 {
+  color: #fff;
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+body .contactindex form input {
+  width: 20vw;
+}
+
+body .contactindex label {
+  letter-spacing: 1px;
+  font-family: "Cinzel", serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+body .contactindex .btn {
+  background-color: #fff9e4;
+  color: #304b86;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+body .footer {
+  font-family: "Cinzel", serif;
+  background-color: #020024;
+  height: 30vh;
+}
+
+body .footer h3 {
+  font-size: 2.5rem;
+}
+
+body .footer ul, body .footer a {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body .footer ul a:hover, body .footer a a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */

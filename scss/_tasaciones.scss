@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+
+$fuenteprimaria: 'Cinzel', serif;
+$fuentesecundaria: 'Playfair Display', serif;
+$fuentetres: 'Raleway', sans-serif;
+$color_primario: #002064;
+$color_secundario:#fff9e4;
+$color_botones:#304b86;
+
+
+
+.tasaciones{
+    background-color: $color_primario;
+    height: auto;
+
+    
+    
+    h2{
+        font-family: $fuenteprimaria;
+        color: $color_primario;
+    }
+    .sec1{
+        
+        height: 100%;
+
+        p{
+            font-family: $fuentetres;
+
+        }
+
+        h3{
+            font-family: $fuenteprimaria;
+            
+           }
+        }
+        
+    .sec2{
+        
+        h3{
+            font-family: $fuenteprimaria;
+            margin-bottom: 0;
+            text-decoration: underline;
+            
+        }
+        .btn-group {
+            
+            font-family: $fuenteprimaria;
+            align-items: center;
+            a{
+                background-color: $color_secundario;
+                color: $color_primario;
+                border-radius: 0px;
+                border:.5px $color_primario solid;
+                margin: 5px;
+            }
+            
+        }
+        .dropdown{
+            font-family: $fuenteprimaria;
+                
+            button{
+
+                border-radius: 0;
+                background-color: $color_secundario;
+                color: $color_primario; 
+                border: 0;               
+            }
+            
+
+        }
+        
+
+        
+
+        }
+
+    .sec3{
+        
+        font-family: $fuenteprimaria;
+        
+        
+        .btn-group {
+            
+            font-family: $fuenteprimaria;
+            align-items: center;
+            label{
+                background-color: $color_secundario;
+                color: $color_primario;
+                border-radius: 0px;
+                border:.5px $color_primario solid;
+                margin: 5px;
+            }
+            
+        }
+
+        .form-control{
+        width: 28vw;
+    }    
+
+
+
+    }
+
+    .submitform{
+ 
+        input{
+            color: $color_primario;
+            background-color: $color_secundario;
+            font-family: $fuenteprimaria;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+$fuenteprimaria: 'Cinzel', serif;
+$fuentesecundaria: 'Playfair Display', serif;
+$fuentetres: 'Raleway', sans-serif;
+$color_primario: #002064;
+$color_secundario:#fff9e4;
+$color_botones:#304b86;
+
+
+body{
+    background-color: $color_secundario;
+
+header{
+
+        .nav-item{
+            font-family: $fuenteprimaria;
+        }   
+    .navbar-brand{
+        color: $color_primario;
+        font-family: $fuenteprimaria;        
+        font-weight: bold;        
+        &:hover{
+            text-decoration: none;
+        }
+    } 
+
+    .navbar-toggler-icon{
+        color: $color_primario;
+        background-color: $color_primario;
+    }
+
+    a{
+        text-decoration: none;
+        color: $color_primario;
+        font-size: 1.8rem;
+        
+        &:hover{
+            text-decoration: underline;
+            color: $color_primario;
+        }
+    }
+
+    .contact{
+        font-family: $fuenteprimaria;
+        font-size: 4rem;
+    }
+
+
+}
+
+.hero{
+    background: url(../img/hero/HeroImage.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 110vh;
+
+    .containerbusqueda{
+        padding-top: 35vh;
+    }
+    /*search*/
+    .search {
+        position: relative;
+        box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+        
+        input{
+            font-family: $fuentetres;
+            font-size: 20px;
+        }
+
+    }
+    
+    .search input {
+        height: 60px;
+        text-indent: 25px;
+        &:focus{
+            border:0;
+        }
+
+    }
+    
+    
+   
+    
+    
+    .search button {
+        font-size: 1.6rem;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 52px;
+        width: 130px;
+        background: $color_botones;
+        color:rgba(255, 255, 255, 0.904);
+    }
+
+    .btn{
+        font-family: $fuenteprimaria;
+        color: rgba(255, 255, 255, 0.904);
+        background-color: $color_botones;
+        font-size: 1.2rem;
+        border: 0;
+            &:hover{
+            text-decoration: underline;
+            color: $color_secundario;
+        }
+    }
+}
+
+.cards{
+    background-color: $color_secundario;
+    height:100%;
+
+    h2{
+        font-family: $fuenteprimaria;
+        font-size: 3rem;
+        color: $color_primario;
+        font-weight: bold;
+        margin: 40px 0;
+        width: auto;        
+        
+    }
+
+    .card{ 
+    transition: transform .2s;
+    border-radius: 20px;
+    background-color:#fff;    
+    margin:60px;
+    padding: 0; 
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img{
+        border-top-right-radius: 20px; 
+        border-top-left-radius: 20px; 
+        height: 15em;
+        width: 100%;
+        
+    } 
+    
+    .card-title{
+       font-family: $fuenteprimaria ;
+       font-size: 1.4rem;
+    }
+    
+    li{
+        
+        font-family:$fuentesecundaria;
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
+
+    .btn{
+        background-color: $color_botones;
+        font-family: $fuentetres;
+        font-size: 20px;
+        border: 0;
+        padding: 0.7em;
+        letter-spacing: 1px;
+        border-radius: 15px ;
+    }   
+
+    }
+}
+
+.contactindex{
+    background: rgb(0,18,56);
+    background: linear-gradient(0deg, rgba(0,18,56,1) 40%, rgba(0,32,100,1) 100%);
+    height: 100%;    
+        
+        h2{
+        color: #fff;
+        font-family:$fuenteprimaria;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom:1.4em;
+        }
+
+        p{
+            font-family: $fuenteprimaria;
+            font-size: 1.8em;
+        }
+
+        form{
+            input{
+                width: 100%;
+            }
+        }
+
+        label{
+            
+            letter-spacing: 1px;
+            font-family: $fuenteprimaria;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    
+                
+        .btn{
+            background-color: $color_secundario;
+            color:$color_botones;
+            font-family: $fuenteprimaria;
+            font-weight: bold;
+            border-radius: 2px;
+            padding: 1rem;
+            
+
+        }
+        
+
+
+    }
+
+.footer{
+    font-family: $fuenteprimaria;
+    background-color: #001238;
+    height: 100%;
+
+    h3{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    h4{
+        margin-top: 2rem;
+    }
+    ul, a {
+        font-size: 1.5rem;
+        text-decoration: underline;
+        color:#fff;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 2rem;
+    a:hover{
+        text-decoration: underline;
+    }
+    
+}
+}
+
+} 

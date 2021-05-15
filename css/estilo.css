@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
 body {
   background-color: #fff9e4; }
   body header .nav-item {
@@ -61,7 +67,7 @@ body {
         color: #fff9e4; }
   body .cards {
     background-color: #fff9e4;
-    height: auto; }
+    height: 100%; }
     body .cards h2 {
       font-family: "Cinzel", serif;
       font-size: 3rem;
@@ -70,10 +76,13 @@ body {
       margin: 40px 0;
       width: auto; }
     body .cards .card {
+      transition: transform .2s;
       border-radius: 20px;
-      background-color: #ffffff;
-      margin: 50px;
+      background-color: #fff;
+      margin: 60px;
       padding: 0; }
+      body .cards .card:hover {
+        transform: scale(1.05); }
       body .cards .card img {
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
@@ -95,16 +104,20 @@ body {
         letter-spacing: 1px;
         border-radius: 15px; }
   body .contactindex {
-    background: #020024;
-    background: linear-gradient(0deg, #020024 6%, #002064 45%);
+    background: #001238;
+    background: linear-gradient(0deg, #001238 40%, #002064 100%);
     height: 100%; }
     body .contactindex h2 {
       color: #fff;
       font-family: "Cinzel", serif;
       font-size: 4rem;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 1.4em; }
+    body .contactindex p {
+      font-family: "Cinzel", serif;
+      font-size: 1.8em; }
     body .contactindex form input {
-      width: 20vw; }
+      width: 100%; }
     body .contactindex label {
       letter-spacing: 1px;
       font-family: "Cinzel", serif;
@@ -119,15 +132,122 @@ body {
       padding: 1rem; }
   body .footer {
     font-family: "Cinzel", serif;
-    background-color: #020024;
-    height: 30vh; }
+    background-color: #001238;
+    height: 100%; }
     body .footer h3 {
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      margin-top: 2rem; }
+    body .footer h4 {
+      margin-top: 2rem; }
     body .footer ul, body .footer a {
       font-size: 1.5rem;
       text-decoration: underline;
       color: #fff;
       text-decoration: none;
-      list-style-type: none; }
+      list-style-type: none;
+      margin-top: 2rem; }
       body .footer ul a:hover, body .footer a a:hover {
         text-decoration: underline; }
+
+.propiedades_cards {
+  background-color: #fff9e4;
+  height: 100%; }
+  .propiedades_cards .bg-image {
+    background-image: url(../img/Hero/HeroPropiedades.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px); }
+  .propiedades_cards .filtro_busqueda {
+    background-color: #304b86;
+    border-radius: 20px; }
+    .propiedades_cards .filtro_busqueda .btn {
+      background-color: #f0e9cf;
+      width: 20vw;
+      height: 10vh;
+      font-family: "Cinzel", serif; }
+  .propiedades_cards h2 {
+    font-family: "Cinzel", serif;
+    font-size: 3rem;
+    color: #002064;
+    font-weight: bold;
+    margin: 40px 0;
+    width: auto; }
+  .propiedades_cards .card {
+    transition: transform .2s;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 50px;
+    padding: 0; }
+    .propiedades_cards .card:hover {
+      transform: scale(1.05); }
+    .propiedades_cards .card img {
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      height: 15em;
+      width: 100%; }
+    .propiedades_cards .card .card-title {
+      font-family: "Cinzel", serif;
+      font-size: 1.4rem; }
+    .propiedades_cards .card li {
+      font-family: "Playfair Display", serif;
+      font-size: 1.3rem;
+      line-height: 25px; }
+    .propiedades_cards .card .btn {
+      background-color: #304b86;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      border: 0;
+      padding: 0.7em;
+      letter-spacing: 1px;
+      border-radius: 15px; }
+
+.tasaciones {
+  background-color: #002064;
+  height: auto; }
+  .tasaciones h2 {
+    font-family: "Cinzel", serif;
+    color: #002064; }
+  .tasaciones .sec1 {
+    height: 100%; }
+    .tasaciones .sec1 p {
+      font-family: "Raleway", sans-serif; }
+    .tasaciones .sec1 h3 {
+      font-family: "Cinzel", serif; }
+  .tasaciones .sec2 h3 {
+    font-family: "Cinzel", serif;
+    margin-bottom: 0;
+    text-decoration: underline; }
+  .tasaciones .sec2 .btn-group {
+    font-family: "Cinzel", serif;
+    align-items: center; }
+    .tasaciones .sec2 .btn-group a {
+      background-color: #fff9e4;
+      color: #002064;
+      border-radius: 0px;
+      border: 0.5px #002064 solid;
+      margin: 5px; }
+  .tasaciones .sec2 .dropdown {
+    font-family: "Cinzel", serif; }
+    .tasaciones .sec2 .dropdown button {
+      border-radius: 0;
+      background-color: #fff9e4;
+      color: #002064;
+      border: 0; }
+  .tasaciones .sec3 {
+    font-family: "Cinzel", serif; }
+    .tasaciones .sec3 .btn-group {
+      font-family: "Cinzel", serif;
+      align-items: center; }
+      .tasaciones .sec3 .btn-group label {
+        background-color: #fff9e4;
+        color: #002064;
+        border-radius: 0px;
+        border: 0.5px #002064 solid;
+        margin: 5px; }
+    .tasaciones .sec3 .form-control {
+      width: 28vw; }
+  .tasaciones .submitform input {
+    color: #002064;
+    background-color: #fff9e4;
+    font-family: "Cinzel", serif; }

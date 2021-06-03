@@ -1,0 +1,65 @@
+.contacto{
+    background: rgb(0,18,56);
+background: linear-gradient(0deg, rgba(0,18,56,1) 13%, rgb(0, 26, 82) 53%, rgb(0, 36, 114) 100%);
+
+h4{
+
+    font-family: $fuenteprimaria;
+    font-size: 1.8rem;
+    border-bottom: 3px solid white;
+
+}
+    li,button, label{
+        font-family: $fuenteprimaria;
+        font-size: 1.8rem;
+        list-style: none;
+    }
+    
+    
+    h2{
+        font-family: $fuenteprimaria;
+        font-size: 3rem;
+        font-weight: bold;
+        padding-top: .75em ;
+        width: auto;        
+        
+    }
+
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+
+    /**iconos**/
+    .icon{
+        font-size: 2.4rem;
+    }
+
+    
+
+
+
+
+    button{
+        font-weight: bold;
+        background-color: $color_secundario;
+        padding: .5em 2em;
+        transition: transform .2s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+
+
+
+}

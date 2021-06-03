@@ -12,18 +12,23 @@ $color_botones:#304b86;
 
 
 .tasaciones{
-    background-color: $color_primario;
-    height: auto;
+    background: rgb(0,18,56);
+background: linear-gradient(0deg, rgba(0,18,56,1) 13%, rgb(0, 26, 82) 53%, rgb(0, 36, 114) 100%);
+}
 
     
     
-    h2{
-        font-family: $fuenteprimaria;
-        color: $color_primario;
-    }
+h2{
+    font-family: $fuenteprimaria;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: .75em ;
+    width: auto;        
+    
+}
     .sec1{
         
-        height: 100%;
+        
 
         p{
             font-family: $fuentetres;
@@ -114,4 +119,4 @@ $color_botones:#304b86;
     }
 
 
-}
+

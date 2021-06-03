@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+
+$fuenteprimaria: 'Cinzel', serif;
+$fuentesecundaria: 'Playfair Display', serif;
+$fuentetres: 'Raleway', sans-serif;
+$color_primario: #002064;
+$color_secundario:#fff9e4;
+$color_botones:#304b86;
+
+.proyectos{
+    background: rgb(0,18,56);
+    background: linear-gradient(0deg, rgba(0,18,56,1) 13%, rgb(0, 26, 82) 53%, rgb(0, 36, 114) 100%);
+
+    h2{
+        font-family: $fuenteprimaria;
+        font-size: 3rem;
+        font-weight: bold;
+        padding-top: .75em ;
+        width: auto;        
+    }
+    
+    .card{ 
+        height: 100%;
+        transition: transform .2s;
+        border-radius: 6px;
+        border: 0;
+        background-color:#f7f2e5f3;
+        margin:50px;
+        padding: 0;
+        cursor: pointer; 
+        &:hover {
+            transform: scale(1.05);
+        }
+    
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 0;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            
+            
+        } 
+        
+        .card-title{
+        font-family: $fuenteprimaria ;
+        font-size: 1.8rem;
+        margin-top: .75em;
+        }
+    }
+
+
+    
+}

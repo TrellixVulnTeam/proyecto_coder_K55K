@@ -12,9 +12,12 @@ $color_botones:#304b86;
 body{
     background-color: $color_secundario;
 
+
+
 header{
 
-        .nav-item{
+    
+    .nav-item{ 
             font-family: $fuenteprimaria;
         }   
     .navbar-brand{
@@ -26,26 +29,27 @@ header{
         }
     } 
 
-    .navbar-toggler-icon{
-        color: $color_primario;
-        background-color: $color_primario;
-    }
-
-    a{
+    li a{
         text-decoration: none;
         color: $color_primario;
         font-size: 1.8rem;
+        transition: transform .2s;
         
         &:hover{
-            text-decoration: underline;
+            border-bottom: $color_primario 5px solid;
             color: $color_primario;
+            transform: scale(1.05);
         }
     }
 
-    .contact{
-        font-family: $fuenteprimaria;
-        font-size: 4rem;
+    .navbar-toggler{
+        background-color: red;
+        
+        .navbar-toggler-icon {
+            color: blue;
+        }
     }
+
 
 
 }
@@ -122,11 +126,12 @@ header{
     }
 
     .card{ 
-    transition: transform .2s;
     border-radius: 20px;
     background-color:#fff;    
     margin:60px;
     padding: 0; 
+    transition: transform .2s;
+
     &:hover {
         transform: scale(1.05);
     }
@@ -149,6 +154,7 @@ header{
         font-family:$fuentesecundaria;
         font-size: 1.3rem;
         line-height: 25px;
+        
     }
 
     .btn{
@@ -159,6 +165,10 @@ header{
         padding: 0.7em;
         letter-spacing: 1px;
         border-radius: 15px ;
+        transition: transform .22s;
+        &:hover {
+            transform: scale(1.05);
+        }
     }   
 
     }

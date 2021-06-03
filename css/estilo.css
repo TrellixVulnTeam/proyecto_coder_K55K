@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
 body {
   background-color: #fff9e4; }
   body header .nav-item {
@@ -16,19 +18,19 @@ body {
     font-weight: bold; }
     body header .navbar-brand:hover {
       text-decoration: none; }
-  body header .navbar-toggler-icon {
-    color: #002064;
-    background-color: #002064; }
-  body header a {
+  body header li a {
     text-decoration: none;
     color: #002064;
-    font-size: 1.8rem; }
-    body header a:hover {
-      text-decoration: underline;
-      color: #002064; }
-  body header .contact {
-    font-family: "Cinzel", serif;
-    font-size: 4rem; }
+    font-size: 1.8rem;
+    transition: transform .2s; }
+    body header li a:hover {
+      border-bottom: #002064 5px solid;
+      color: #002064;
+      transform: scale(1.05); }
+  body header .navbar-toggler {
+    background-color: red; }
+    body header .navbar-toggler .navbar-toggler-icon {
+      color: blue; }
   body .hero {
     background: url(../img/hero/HeroImage.jpg) no-repeat center/cover;
     background-attachment: fixed;
@@ -76,11 +78,11 @@ body {
       margin: 40px 0;
       width: auto; }
     body .cards .card {
-      transition: transform .2s;
       border-radius: 20px;
       background-color: #fff;
       margin: 60px;
-      padding: 0; }
+      padding: 0;
+      transition: transform .2s; }
       body .cards .card:hover {
         transform: scale(1.05); }
       body .cards .card img {
@@ -102,7 +104,10 @@ body {
         border: 0;
         padding: 0.7em;
         letter-spacing: 1px;
-        border-radius: 15px; }
+        border-radius: 15px;
+        transition: transform .22s; }
+        body .cards .card .btn:hover {
+          transform: scale(1.05); }
   body .contactindex {
     background: #001238;
     background: linear-gradient(0deg, #001238 40%, #002064 100%);
@@ -150,33 +155,39 @@ body {
         text-decoration: underline; }
 
 .propiedades_cards {
-  background-color: #fff9e4;
-  height: 100%; }
+  background: #001238;
+  background: linear-gradient(0deg, #001238 13%, #00226b 53%, #002472 100%);
+  height: 100%;
+  padding: 0; }
   .propiedades_cards .bg-image {
     background-image: url(../img/Hero/HeroPropiedades.jpg);
-    background-position: center;
+    background-color: rgba(0, 34, 145, 0.267);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(8px); }
-  .propiedades_cards .filtro_busqueda {
-    background-color: #304b86;
-    border-radius: 20px; }
-    .propiedades_cards .filtro_busqueda .btn {
-      background-color: #f0e9cf;
-      width: 20vw;
-      height: 10vh;
-      font-family: "Cinzel", serif; }
+    background-attachment: fixed;
+    background-position: bottom;
+    height: 100%;
+    padding-bottom: 2em; }
+  .propiedades_cards .filtro_busqueda .btn {
+    background-color: #f0e9cf;
+    color: #002064;
+    padding: .5em 3em;
+    font-family: "Cinzel", serif;
+    transition: transform .2s; }
+    .propiedades_cards .filtro_busqueda .btn:hover {
+      transform: scale(1.05); }
   .propiedades_cards h2 {
     font-family: "Cinzel", serif;
     font-size: 3rem;
     color: #002064;
     font-weight: bold;
-    margin: 40px 0;
+    padding: 40px 0;
     width: auto; }
   .propiedades_cards .card {
     transition: transform .2s;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #f7f2e5;
     margin: 50px;
     padding: 0; }
     .propiedades_cards .card:hover {
@@ -190,6 +201,7 @@ body {
       font-family: "Cinzel", serif;
       font-size: 1.4rem; }
     .propiedades_cards .card li {
+      background-color: #f7f2e5;
       font-family: "Playfair Display", serif;
       font-size: 1.3rem;
       line-height: 25px; }
@@ -200,54 +212,137 @@ body {
       border: 0;
       padding: 0.7em;
       letter-spacing: 1px;
-      border-radius: 15px; }
+      border-radius: 15px;
+      transition: transform .22s; }
+      .propiedades_cards .card .btn:hover {
+        transform: scale(1.05); }
 
 .tasaciones {
-  background-color: #002064;
-  height: auto; }
-  .tasaciones h2 {
-    font-family: "Cinzel", serif;
-    color: #002064; }
-  .tasaciones .sec1 {
-    height: 100%; }
-    .tasaciones .sec1 p {
-      font-family: "Raleway", sans-serif; }
-    .tasaciones .sec1 h3 {
-      font-family: "Cinzel", serif; }
-  .tasaciones .sec2 h3 {
-    font-family: "Cinzel", serif;
-    margin-bottom: 0;
-    text-decoration: underline; }
-  .tasaciones .sec2 .btn-group {
+  background: #001238;
+  background: linear-gradient(0deg, #001238 13%, #001a52 53%, #002472 100%); }
+
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: .75em;
+  width: auto; }
+
+.sec1 p {
+  font-family: "Raleway", sans-serif; }
+
+.sec1 h3 {
+  font-family: "Cinzel", serif; }
+
+.sec2 h3 {
+  font-family: "Cinzel", serif;
+  margin-bottom: 0;
+  text-decoration: underline; }
+
+.sec2 .btn-group {
+  font-family: "Cinzel", serif;
+  align-items: center; }
+  .sec2 .btn-group a {
+    background-color: #fff9e4;
+    color: #002064;
+    border-radius: 0px;
+    border: 0.5px #002064 solid;
+    margin: 5px; }
+
+.sec2 .dropdown {
+  font-family: "Cinzel", serif; }
+  .sec2 .dropdown button {
+    border-radius: 0;
+    background-color: #fff9e4;
+    color: #002064;
+    border: 0; }
+
+.sec3 {
+  font-family: "Cinzel", serif; }
+  .sec3 .btn-group {
     font-family: "Cinzel", serif;
     align-items: center; }
-    .tasaciones .sec2 .btn-group a {
+    .sec3 .btn-group label {
       background-color: #fff9e4;
       color: #002064;
       border-radius: 0px;
       border: 0.5px #002064 solid;
       margin: 5px; }
-  .tasaciones .sec2 .dropdown {
-    font-family: "Cinzel", serif; }
-    .tasaciones .sec2 .dropdown button {
-      border-radius: 0;
-      background-color: #fff9e4;
-      color: #002064;
-      border: 0; }
-  .tasaciones .sec3 {
-    font-family: "Cinzel", serif; }
-    .tasaciones .sec3 .btn-group {
-      font-family: "Cinzel", serif;
-      align-items: center; }
-      .tasaciones .sec3 .btn-group label {
-        background-color: #fff9e4;
-        color: #002064;
-        border-radius: 0px;
-        border: 0.5px #002064 solid;
-        margin: 5px; }
-    .tasaciones .sec3 .form-control {
-      width: 28vw; }
-  .tasaciones .submitform input {
-    color: #002064;
+  .sec3 .form-control {
+    width: 28vw; }
+
+.submitform input {
+  color: #002064;
+  background-color: #fff9e4;
+  font-family: "Cinzel", serif; }
+
+.contacto {
+  background: #001238;
+  background: linear-gradient(0deg, #001238 13%, #001a52 53%, #002472 100%);
+  /**iconos**/ }
+  .contacto h4 {
+    font-family: "Cinzel", serif;
+    font-size: 1.8rem;
+    border-bottom: 3px solid white; }
+  .contacto li, .contacto button, .contacto label {
+    font-family: "Cinzel", serif;
+    font-size: 1.8rem;
+    list-style: none; }
+  .contacto h2 {
+    font-family: "Cinzel", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: .75em;
+    width: auto; }
+  .contacto .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0; }
+  .contacto .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  .contacto .icon {
+    font-size: 2.4rem; }
+  .contacto button {
+    font-weight: bold;
     background-color: #fff9e4;
-    font-family: "Cinzel", serif; }
+    padding: .5em 2em;
+    transition: transform .2s; }
+    .contacto button:hover {
+      transform: scale(1.05); }
+
+.proyectos {
+  background: #001238;
+  background: linear-gradient(0deg, #001238 13%, #001a52 53%, #002472 100%); }
+  .proyectos h2 {
+    font-family: "Cinzel", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: .75em;
+    width: auto; }
+  .proyectos .card {
+    height: 100%;
+    transition: transform .2s;
+    border-radius: 6px;
+    border: 0;
+    background-color: #f7f2e5f3;
+    margin: 50px;
+    padding: 0;
+    cursor: pointer; }
+    .proyectos .card:hover {
+      transform: scale(1.05); }
+    .proyectos .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 0;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px; }
+    .proyectos .card .card-title {
+      font-family: "Cinzel", serif;
+      font-size: 1.8rem;
+      margin-top: .75em; }

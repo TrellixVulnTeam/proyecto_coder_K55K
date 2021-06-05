@@ -10,6 +10,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
 body {
   background-color: #fff9e4; }
+  body header #navbarNav {
+    justify-content: end; }
   body header .nav-item {
     font-family: "Cinzel", serif; }
   body header .navbar-brand {
@@ -19,6 +21,7 @@ body {
     body header .navbar-brand:hover {
       text-decoration: none; }
   body header li a {
+    justify-content: end;
     text-decoration: none;
     color: #002064;
     font-size: 1.8rem;
@@ -27,10 +30,6 @@ body {
       border-bottom: #002064 5px solid;
       color: #002064;
       transform: scale(1.05); }
-  body header .navbar-toggler {
-    background-color: red; }
-    body header .navbar-toggler .navbar-toggler-icon {
-      color: blue; }
   body .hero {
     background: url(../img/hero/HeroImage.jpg) no-repeat center/cover;
     background-attachment: fixed;
@@ -140,8 +139,8 @@ body {
     background-color: #001238;
     height: 100%; }
     body .footer h3 {
-      font-size: 2.5rem;
-      margin-top: 2rem; }
+      font-size: 2rem;
+      margin-top: 2em; }
     body .footer h4 {
       margin-top: 2rem; }
     body .footer ul, body .footer a {

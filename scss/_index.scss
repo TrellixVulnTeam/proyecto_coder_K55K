@@ -16,7 +16,9 @@ body{
 
 header{
 
-    
+    #navbarNav{
+        justify-content: end;}
+
     .nav-item{ 
             font-family: $fuenteprimaria;
         }   
@@ -30,6 +32,7 @@ header{
     } 
 
     li a{
+        justify-content: end;
         text-decoration: none;
         color: $color_primario;
         font-size: 1.8rem;
@@ -42,14 +45,7 @@ header{
         }
     }
 
-    .navbar-toggler{
-        background-color: red;
-        
-        .navbar-toggler-icon {
-            color: blue;
-        }
-    }
-
+    
 
 
 }
@@ -228,8 +224,8 @@ header{
     height: 100%;
 
     h3{
-        font-size: 2.5rem;
-        margin-top: 2rem;
+        font-size: 2rem;
+        margin-top: 2em;
     }
     h4{
         margin-top: 2rem;
